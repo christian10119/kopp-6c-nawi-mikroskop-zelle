@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d535a">
+<meta name="description" content="NaWi-Lernseite Klasse 6c: Lichtmikroskop, optische Linsen, Vergrößerung, Pflanzen- und Tierzelle, Übungen und Probearbeit.">
+<title>NaWi 6c – Lernseite Mikroskop &amp; Zelle</title>
+<style>
+:root{--ink:#193342;--muted:#58707b;--teal:#0d6569;--teal2:#e9f5f2;--border:#dae4e6;--paper:#fff;--bg:#f5f8f7;--amber:#fff4df;--red:#9d4b26;--shadow:0 8px 28px rgba(21,54,63,.055)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;margin:0;color:var(--ink);background:var(--bg);font-size:16px;line-height:1.56}a{color:var(--teal)}button,input{font:inherit}button{cursor:pointer}strong{font-weight:720}
+.hero{background:linear-gradient(135deg,#0d535a,#167b76);color:white;padding:41px max(20px,calc((100% - 1020px)/2)) 36px}.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:#bde8df;margin:0 0 12px}.hero h1{font-size:clamp(31px,5.6vw,51px);line-height:1.08;letter-spacing:-.04em;margin:0 0 14px}.hero p{max-width:730px;margin:0;font-size:17px;color:#e9f5f2}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:21px}.meta span{padding:6px 11px;border-radius:999px;background:#ffffff1a;border:1px solid #ffffff44;font-size:13px}.nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:10;box-shadow:0 2px 10px #17434a0b}.navinner{max-width:1048px;margin:auto;display:flex;gap:8px;overflow:auto;padding:10px 16px;scrollbar-width:thin}.nav a{white-space:nowrap;text-decoration:none;padding:8px 12px;border-radius:9px;color:#2c555c;font-size:13px;font-weight:750}.nav a:hover,.nav a:focus-visible{background:var(--teal2)}
+main{max-width:1048px;padding:20px 16px 70px;margin:auto}.section{margin:30px 0 40px}.section>h2{font-size:clamp(24px,3.7vw,31px);line-height:1.18;letter-spacing:-.025em;margin:0 0 10px}.kicker{font-size:12px;font-weight:850;color:#0d7773;text-transform:uppercase;letter-spacing:.09em;margin:0 0 8px}.lead{color:var(--muted);max-width:800px;margin:0 0 22px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.card{background:var(--paper);border:1px solid var(--border);border-radius:17px;padding:20px;box-shadow:var(--shadow);min-width:0}.card h3{font-size:19px;letter-spacing:-.012em;line-height:1.3;margin:0 0 10px}.card p:last-child{margin-bottom:0}.card p{margin:9px 0}.card .minilabel{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:750;color:var(--muted)}.wide{grid-column:1/-1}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid3 .card{padding:17px}.pill{display:inline-block;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:800;background:var(--teal2);color:#0a6466}.pill.extra{background:#fff0d8;color:#875116}.callout{padding:15px 17px;border-left:4px solid #167c78;border-radius:0 10px 10px 0;background:#edf8f5;margin:16px 0}.callout.amber{background:var(--amber);border-color:#da9d34}.callout p{margin:0}.source{color:#637b83;font-size:12px;margin:10px 0 0}.formula{font-weight:820;font-size:clamp(19px,3.1vw,26px);color:#0f575d;padding:18px;background:#e6f5f3;border-radius:14px;text-align:center;line-height:1.35;margin:17px 0}.note{font-size:14px;color:var(--muted)}.graphic{width:100%;height:auto;display:block;max-height:450px;margin:5px auto}.svgtiny{font-size:14px;fill:#4e6571;font-family:system-ui,sans-serif}.svglbl{font-size:19px;font-weight:800;fill:#254650;font-family:system-ui,sans-serif;text-anchor:middle}.viz{background:#fcfefe;border:1px solid #dae8e7;border-radius:13px;padding:8px;margin:14px 0}.figurecaption{font-size:13px;color:var(--muted);text-align:center;margin:0 5px 6px}.scroll-table{width:100%;overflow-x:auto}.table{width:100%;border-collapse:collapse;line-height:1.43;font-size:14px;min-width:460px}.table th{text-align:left;background:#e9f5f2;color:#17474b}.table td,.table th{padding:11px;border-bottom:1px solid #dde7e8;vertical-align:top}.table tr:last-child td{border-bottom:none}.table td:first-child{font-weight:750}.small-table td,.small-table th{padding:9px}ol.steps{counter-reset:steps;padding:0;margin:12px 0;list-style:none}ol.steps li{position:relative;padding:10px 10px 10px 51px;margin:8px 0;background:#f5faf9;border:1px solid #e5efec;border-radius:10px}ol.steps li:before{counter-increment:steps;content:counter(steps);position:absolute;left:11px;top:12px;display:grid;place-items:center;width:27px;height:27px;background:#0d6e6d;color:white;border-radius:100%;font-weight:850;font-size:13px}.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.goal{display:flex;align-items:flex-start;gap:11px;border:1px solid #e0ebea;border-radius:11px;padding:12px;background:#fdfefe;cursor:pointer}.goal input{margin-top:5px;width:19px;height:19px;accent-color:#147d73;flex:none}.goal span{font-size:14px}.progress{height:10px;border-radius:10px;background:#e3eeed;overflow:hidden;margin:14px 0 6px}.progress>div{height:100%;width:0;background:#168680;transition:width .2s ease}.progressword{font-size:13px;color:var(--muted)}.bullet{padding-left:19px;margin:10px 0}.bullet li{margin:5px 0}details{border:1px solid #d7e5e4;border-radius:11px;background:#fff;margin:12px 0;overflow:hidden}summary{padding:12px 15px;font-weight:780;color:#175f62;cursor:pointer}summary:hover{background:#f4faf9}details .answer{padding:12px 17px 16px;border-top:1px solid #e6edec;color:#244451;background:#fbfefd}details .answer>*:first-child{margin-top:0}details .answer>*:last-child{margin-bottom:0}.tasks{counter-reset:q} .question{border:1px solid #d7e3e4;border-radius:15px;background:white;margin:16px 0;padding:18px}.question h3{margin:0 0 12px;font-size:18px}.points{float:right;background:#f0f4f2;color:#425b62;padding:3px 9px;font-size:12px;border-radius:99px}.lines{background:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,#d7e2e3 32px,#d7e2e3 33px);height:100px;margin:12px 0}.lines.short{height:68px}.testlabel{display:inline-flex;font-size:12px;font-weight:750;color:#875116;background:#fff1db;border-radius:99px;padding:4px 10px;margin-bottom:10px}.chiprow{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}.chip{font-size:13px;color:#315760;border:1px solid #d8e7e7;padding:5px 10px;border-radius:99px;background:#f7fbfa}.backtop{text-align:right;margin-top:10px;font-size:13px}.tiny{font-size:12px;color:#5d737d}.badge-no{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;color:#fff;background:#11716f;font-size:12px;font-weight:850;margin-right:8px}.footer{border-top:1px solid #d3e2e2;padding:24px 16px 34px;color:#688087;text-align:center;font-size:12px}.special{background:#fff9ed;border-color:#efdfc6}.two{display:flex;align-items:flex-start;gap:20px}.two>*{flex:1;min-width:0}.btn{border:1px solid #b4d5d1;background:#fff;color:#0a6567;border-radius:8px;padding:7px 11px;font-weight:750;font-size:12px}.btn:hover{background:#e7f5f1}
+@media(max-width:750px){.cards,.grid3,.checks{grid-template-columns:1fr}.card{padding:17px}.wide{grid-column:auto}.two{display:block}.hero{padding:28px 18px}.navinner{padding-left:10px}.graphic{max-height:375px}main{padding:14px 12px 54px}.scroll-table{overflow:visible}.table{min-width:0;font-size:12.8px}.table td,.table th{padding:8px 5px;overflow-wrap:anywhere}.threecol{table-layout:fixed}.threecol th:first-child,.threecol td:first-child{width:33px}.threecol th:nth-child(2),.threecol td:nth-child(2){width:115px}.question{padding:15px}.section{margin:30px 0}.formula{font-size:20px}}
+@media print{body{background:white;font-size:11pt}.nav,.btn,.backtop,.no-print{display:none!important}.hero{background:none;color:black;padding:0 0 12px}.eyebrow,.hero p,.meta span{color:black}.meta span{border:1px solid #999;background:white}main{max-width:none;margin:0;padding:0}.card,.question{break-inside:avoid;box-shadow:none;border-color:#aaa}.section{break-before:auto}.graphic{max-height:280px}.goal{padding:5px}.progress{display:none}.card{padding:11px}details:not([open]) .answer{display:none}summary{padding:5px}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+ <p class="eyebrow">Grundschule am Koppenplatz · Naturwissenschaften · 6c</p>
+ <h1>Das Mikroskop<br>und die Zelle</h1>
+ <p>Dein kompletter Lernbegleiter: verstehen, zeichnen, üben und mit einer Probearbeit überprüfen, was schon sitzt.</p>
+ <div class="meta"><span>Klassenarbeit: 12. November 2026</span><span>9 Lernziele</span><span>Alles offline nutzbar</span><span>Nur 1 Datei</span></div>
+</header>
+<nav class="nav" aria-label="Seitennavigation"><div class="navinner">
+ <a href="#ueberblick">Übersicht</a><a href="#linsen">1 · Linsen</a><a href="#mikroskop">2 · Bauteile</a><a href="#vergroesserung">3 · Vergrößerung</a><a href="#mikroskopieren">4 · Mikroskopieren</a><a href="#zelle">5 · Zelle</a><a href="#vergleich">6 · Vergleich</a><a href="#probearbeit">Probearbeit</a><a href="#abend">Abendcheck</a>
+</div></nav>
+<main>
+<section id="ueberblick" class="section">
+ <p class="kicker">Start • Dein Lernplan</p><h2>Was musst du für die Arbeit können?</h2>
+ <p class="lead">Die <strong>neun Kästchen stammen direkt aus deinem Transparenzpapier</strong>. Hake ab, was du aus dem Kopf kannst – nicht nur, was du einmal gelesen hast.</p>
+ <div class="card">
+  <div class="two"><div><h3>Deine Checkliste</h3><p class="note">Das Mikroskop (6 Ziele) und Die Zelle (3 Ziele).</p></div><div><div class="progress" role="progressbar" aria-label="Erledigte Lernziele" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0" id="barrole"><div id="bar"></div></div><div class="progressword" id="progtext">0 von 9 Lernzielen abgehakt</div><button class="btn no-print" id="clear" type="button">Häkchen zurücksetzen</button></div></div>
+  <div class="checks">
+   <label class="goal"><input type="checkbox" data-goal="1"><span>Ich kann <strong>Sammellinse und Zerstreuungslinse</strong> benennen.</span></label>
+   <label class="goal"><input type="checkbox" data-goal="2"><span>Ich kann Lichtstrahlen <strong>gesammelt und gestreut</strong> einzeichnen.</span></label>
+   <label class="goal"><input type="checkbox" data-goal="3"><span>Ich kann die <strong>Bauteile</strong> eines Mikroskops beschriften.</span></label>
+   <label class="goal"><input type="checkbox" data-goal="4"><span>Ich kenne die <strong>Funktionen</strong> der Mikroskopbauteile.</span></label>
+   <label class="goal"><input type="checkbox" data-goal="5"><span>Ich kann die <strong>Gesamtvergrößerung</strong> berechnen.</span></label>
+   <label class="goal"><input type="checkbox" data-goal="6"><span>Ich kann die Schritte des <strong>richtigen Mikroskopierens</strong> anwenden.</span></label>
+   <label class="goal"><input type="checkbox" data-goal="7"><span>Ich kann die <strong>acht Zellbestandteile</strong> einer Pflanzenzelle beschriften.</span></label>
+   <label class="goal"><input type="checkbox" data-goal="8"><span>Ich kann die <strong>Funktionen der Zellbestandteile</strong> erklären.</span></label>
+   <label class="goal"><input type="checkbox" data-goal="9"><span>Ich kenne <strong>Unterschiede</strong> zwischen Pflanzen- und Tierzelle.</span></label>
+  </div>
+  <p class="source">Quelle: Transparenzpapier 6c, 1. Schulhalbjahr 2026/27. Die Häkchen werden nur auf diesem Gerät gespeichert, sofern der Browser das erlaubt.</p>
+ </div>
+ <div class="callout amber"><p><strong>Wichtig für die Vorbereitung:</strong> Die Klassenarbeit verlangt laut Transparenzpapier <strong>Zeichnen und Beschriften</strong>, nicht nur Begriffe auswendig lernen. Verwende beim Üben Bleistift und Lineal. In der Arbeit: Füller, Bleistift, Geodreieck, Radiergummi.</p></div>
+</section>
+
+<section id="linsen" class="section">
+ <p class="kicker">Lernblock 1</p><h2>Optische Linsen &amp; Lichtstrahlen</h2>
+ <p class="lead">Lichtstrahlen können durch eine Linse in ihrer Richtung verändert werden. Achte auf die Form der Linse und darauf, was <strong>rechts hinter der Linse</strong> mit parallel einfallenden Lichtstrahlen passiert.</p>
+ <div class="cards">
+  <article class="card"><span class="pill">Sammellinse · Konvexlinse</span><h3>Die Strahlen treffen sich</h3><p>Eine <strong>Sammellinse</strong> ist <strong>in der Mitte dicker</strong> als am Rand. Parallele Lichtstrahlen werden hinter der Linse zu einem Punkt geführt: dem <strong>Brennpunkt F</strong>.</p><div class="viz"><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Sammellinse: drei parallele Lichtstrahlen links; rechts treffen sie sich im Brennpunkt">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /><path d="M252 75 L398 125 L470 150"/><path d="M252 125 H470"/><path d="M252 175 L398 125 L470 100"/></g>
+    <path d="M252 43 C219 65 219 185 252 207 C285 185 285 65 252 43 Z" fill="#c7f3e8" stroke="#276b7b" stroke-width="2.5"/>
+    <circle cx="398" cy="125" r="4.8" fill="#f97316"/><text x="342" y="83" class="svgtiny">F = Brennpunkt</text><text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div><p class="source">Lehrbuch S. 170, Abschnitt „Optische Linsen“.</p></article>
+  <article class="card"><span class="pill">Zerstreuungslinse · Konkavlinse</span><h3>Die Strahlen laufen auseinander</h3><p>Eine <strong>Zerstreuungslinse</strong> ist <strong>in der Mitte dünner</strong> als am Rand. Die zunächst parallelen Lichtstrahlen laufen hinter ihr <strong>auseinander</strong>.</p><div class="viz"><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Zerstreuungslinse: drei parallele Lichtstrahlen links; rechts laufen sie auseinander">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /><path d="M252 75 L455 24"/><path d="M252 125 H470"/><path d="M252 175 L455 226"/></g>
+    <path d="M225 43 Q260 125 225 207 L279 207 Q244 125 279 43 Z" fill="#dbeafe" stroke="#276b7b" stroke-width="2.5"/>
+    <text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div><p class="source">Lehrbuch S. 170, Abschnitt „Optische Linsen“.</p></article>
+ </div>
+ <div class="callout"><p><strong>Merksatz:</strong> <strong>Dick in der Mitte = sammeln.</strong> <strong>Dünn in der Mitte = zerstreuen.</strong> Bei der Sammellinse treffen parallele Strahlen im Brennpunkt zusammen.</p></div>
+ <article class="card"><h3>Jetzt selbst zeichnen</h3><p>Zeichne auf Papier mit dem Lineal beide Linsen nach. Die drei Lichtstrahlen kommen von links. <strong>Ergänze</strong>, wie sie hinter der Linse weiterlaufen. Markiere bei der Sammellinse den Brennpunkt.</p><div class="cards"><div><p class="minilabel">A · Sammellinse</p><div class="viz"><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Sammellinse: drei parallele Lichtstrahlen links; rechts treffen sie sich im Brennpunkt">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /></g>
+    <path d="M252 43 C219 65 219 185 252 207 C285 185 285 65 252 43 Z" fill="#c7f3e8" stroke="#276b7b" stroke-width="2.5"/>
+    <text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div></div><div><p class="minilabel">B · Zerstreuungslinse</p><div class="viz"><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Zerstreuungslinse: drei parallele Lichtstrahlen links; Lichtstrahlen zum Ergänzen">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /></g>
+    <path d="M225 43 Q260 125 225 207 L279 207 Q244 125 279 43 Z" fill="#dbeafe" stroke="#276b7b" stroke-width="2.5"/>
+    <text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div></div></div><details><summary>Zeichenlösung ansehen</summary><div class="answer"><p><strong>A:</strong> Oben und unten zur Mitte führen, im Punkt <strong>F</strong> kreuzen lassen. Mittlerer Strahl bleibt gerade. <strong>B:</strong> Strahlen hinter der Linse auffächern – der obere nach oben, der untere nach unten, der mittlere gerade.</p><div class="cards"><div><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Sammellinse: drei parallele Lichtstrahlen links; rechts treffen sie sich im Brennpunkt">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /><path d="M252 75 L398 125 L470 150"/><path d="M252 125 H470"/><path d="M252 175 L398 125 L470 100"/></g>
+    <path d="M252 43 C219 65 219 185 252 207 C285 185 285 65 252 43 Z" fill="#c7f3e8" stroke="#276b7b" stroke-width="2.5"/>
+    <circle cx="398" cy="125" r="4.8" fill="#f97316"/><text x="342" y="83" class="svgtiny">F = Brennpunkt</text><text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div><div><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Zerstreuungslinse: drei parallele Lichtstrahlen links; rechts laufen sie auseinander">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /><path d="M252 75 L455 24"/><path d="M252 125 H470"/><path d="M252 175 L455 226"/></g>
+    <path d="M225 43 Q260 125 225 207 L279 207 Q244 125 279 43 Z" fill="#dbeafe" stroke="#276b7b" stroke-width="2.5"/>
+    <text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div></div></div></details></article>
+ <p class="backtop"><a href="#top">Zurück nach oben ↑</a></p>
+</section>
+
+<section id="mikroskop" class="section">
+ <p class="kicker">Lernblock 2</p><h2>Das Mikroskop: Bauteile &amp; Funktionen</h2>
+ <p class="lead">Das Mikroskop macht sehr kleine Dinge sichtbar. Hier sind die Bauteile aus dem Arbeitsblatt und der Buchseite 172 zusammengefasst.</p>
+ <div class="card"><h3>Beschrifte diese Schemaskizze</h3><p class="note">Decke die Tabelle ab und sprich die Bezeichnungen zu den Zahlen laut aus. Die Nummern dienen nur zum Üben; eine Klassenarbeit kann die Pfeile anders setzen.</p><div class="viz"><svg class="graphic" viewBox="0 0 760 540" role="img" aria-label="Schematische Zeichnung eines Lichtmikroskops mit den Nummern 1 bis 11">
+      <path d="M210 476 L584 476 Q608 490 621 520 H172 Q175 492 210 476 Z" fill="#a7b9c7" stroke="#485e73" stroke-width="4"/>
+      <path d="M314 469 C258 385 266 260 370 201 C416 177 464 183 497 193" fill="none" stroke="#667e93" stroke-width="40" stroke-linecap="round"/>
+      <path d="M314 469 C258 385 266 260 370 201 C416 177 464 183 497 193" fill="none" stroke="#b3c1cc" stroke-width="24" stroke-linecap="round"/>
+      <g transform="rotate(-32 506 103)"><rect x="466" y="57" width="80" height="140" rx="9" fill="#c6d2dc" stroke="#40586b" stroke-width="4"/><rect x="456" y="42" width="100" height="28" rx="7" fill="#546b7d" stroke="#31485b" stroke-width="3"/><rect x="463" y="34" width="85" height="12" rx="4" fill="#24384b"/></g>
+      <ellipse cx="559" cy="203" rx="62" ry="23" transform="rotate(-13 559 203)" fill="#657d8f" stroke="#40596e" stroke-width="4"/>
+      <g fill="#e1e9ee" stroke="#40596e" stroke-width="3"><path d="M516 207 L550 207 L553 291 L527 291 Z"/><path d="M572 207 L596 210 L583 263 L566 260 Z"/></g>
+      <rect x="356" y="318" width="286" height="30" rx="6" fill="#566e7d" stroke="#344b5c" stroke-width="3"/><rect x="469" y="306" width="127" height="10" rx="3" fill="#d8f8fa" stroke="#356b84" stroke-width="2"/><ellipse cx="525" cy="333" rx="29" ry="5" fill="#2b4251"/>
+      <rect x="495" y="348" width="72" height="17" rx="6" fill="#96abb8" stroke="#425e70" stroke-width="3"/><circle cx="531" cy="356" r="10" fill="#364b5b"/>
+      <rect x="495" y="410" width="78" height="63" rx="8" fill="#6f8897" stroke="#40586b" stroke-width="3"/><ellipse cx="534" cy="411" rx="35" ry="10" fill="#f6d48a" stroke="#40586b" stroke-width="3"/>
+      <circle cx="313" cy="315" r="41" fill="#6c8798" stroke="#354f61" stroke-width="5"/><circle cx="313" cy="315" r="24" fill="#cdd8df" stroke="#3d5768" stroke-width="4"/><circle cx="318" cy="325" r="13" fill="#4c6a7a" stroke="#2f4f5f" stroke-width="2"/>
+      <circle cx="551" cy="489" r="10" fill="#f1c979" stroke="#485c6c" stroke-width="2"/>
+      <g><circle cx="454" cy="38" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="454" y="43" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">1</text></g><g><circle cx="530" cy="113" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="530" y="118" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">2</text></g><g><circle cx="555" cy="274" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="555" y="279" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">3</text></g><g><circle cx="624" cy="323" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="624" y="328" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">4</text></g><g><circle cx="512" cy="360" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="512" y="365" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">5</text></g><g><circle cx="330" cy="230" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="330" y="235" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">6</text></g><g><circle cx="307" cy="328" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="307" y="333" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">7</text></g><g><circle cx="524" cy="437" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="524" y="442" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">8</text></g><g><circle cx="625" cy="189" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="625" y="194" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">9</text></g><g><circle cx="559" cy="307" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="559" y="312" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">10</text></g><g><circle cx="433" cy="489" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="433" y="494" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">11</text></g>
+      <text x="29" y="526" class="svgtiny">Schematisch • Zeichnung nicht maßstabsgetreu</text>
+    </svg></div>
+ <div class="scroll-table"><table class="table small-table threecol"><thead><tr><th>Nr.</th><th>Bauteil</th><th>Funktion – so kannst du es sagen</th></tr></thead><tbody>
+ <tr><td>1</td><td>Okular</td><td>Durch diese Linse schaust du; sie vergrößert wie eine Lupe.</td></tr>
+ <tr><td>2</td><td>Tubus</td><td>Hält das Okular.</td></tr>
+ <tr><td>3</td><td>Objektiv</td><td>Enthält Vergrößerungslinsen für das Objekt.</td></tr>
+ <tr><td>4</td><td>Objekttisch</td><td>Trägt den Objektträger mit dem Präparat.</td></tr>
+ <tr><td>5</td><td>Blende</td><td>Regelt Helligkeit und Kontrast des Bildes.</td></tr>
+ <tr><td>6</td><td>Stativ</td><td>Verbindet die Teile und gibt Halt; hier trägt man das Gerät.</td></tr>
+ <tr><td>7</td><td>Triebrad (Grob-/Feintrieb)</td><td>Verändert den Abstand von Tisch und Objektiv, um scharfzustellen.</td></tr>
+ <tr><td>8</td><td>Lampe / Lichtquelle</td><td>Beleuchtet das Präparat.</td></tr>
+ <tr><td>9</td><td>Objektivrevolver</td><td>Wird gedreht, um ein Objektiv mit anderer Vergrößerung auszuwählen.</td></tr>
+ <tr><td>10</td><td>Objektträger</td><td>Glasplättchen, auf dem das Präparat liegt.</td></tr>
+ <tr><td>11</td><td>Fuß</td><td>Sorgt für sicheren Stand.</td></tr>
+ </tbody></table></div>
+ <p class="note">Zusätzlich im Schul-Arbeitsblatt genannt: <strong>Beleuchtungsregler</strong> – stellt die Helligkeit der Lampe ein. Er ist nicht an jeder Zeichnung einzeln beschriftet.</p><p class="source">Quellen: „Das Mikroskop – Bestandteile und Funktion“, Schülerblätter S. 12–14; Lehrbuch S. 172.</p></div>
+ <div class="grid3"><div class="card"><h3>Zum Durchschauen</h3><p><strong>Okular</strong> und <strong>Objektiv</strong> enthalten Linsen und vergrößern das Bild.</p></div><div class="card"><h3>Zum Scharfstellen</h3><p>Mit <strong>Grobtrieb</strong> und <strong>Feintrieb</strong> stellst du das Bild scharf.</p></div><div class="card"><h3>Für die Beleuchtung</h3><p><strong>Lampe</strong> liefert Licht; <strong>Blende</strong> verändert Helligkeit und Kontrast.</p></div></div>
+ <details><summary>Mini-Abfrage: Was ist der Unterschied zwischen Objektträger und Objekttisch?</summary><div class="answer"><p>Auf dem <strong>Objektträger</strong> liegt das Präparat. Der <strong>Objekttisch</strong> trägt diesen Objektträger.</p></div></details>
+</section>
+
+<section id="vergroesserung" class="section">
+ <p class="kicker">Lernblock 3</p><h2>Die Gesamtvergrößerung berechnen</h2>
+ <p class="lead">Das Objektiv vergrößert. Anschließend vergrößert das Okular das Bild noch einmal. Deshalb werden die beiden Werte <strong>multipliziert</strong>.</p>
+ <div class="card"><h3>Eine Formel reicht</h3><div class="formula">Gesamtvergrößerung = Okular × Objektiv</div><p><strong>Beispiel aus dem Buch:</strong> Das Okular vergrößert 10-fach, das Objektiv 40-fach.</p><div class="formula">10 × 40 = <strong>400-fach</strong></div><p class="source">Lehrbuch S. 172, Kasten „Die Vergrößerung“.</p>
+ <h3>Rechne selbst</h3><p>1. Okular 10-fach, Objektiv 10-fach: Wie groß ist die Gesamtvergrößerung?</p><p>2. Okular 10-fach, Objektiv 40-fach: Wie groß ist die Gesamtvergrößerung?</p><details><summary>Rechenwege aufklappen</summary><div class="answer"><p>1. 10 × 10 = <strong>100-fach</strong></p><p>2. 10 × 40 = <strong>400-fach</strong></p></div></details></div>
+ <div class="callout"><p><strong>Merksatz:</strong> <strong>Okular mal Objektiv.</strong> Nicht addieren! Schreibe bei einer Berechnung immer auch „-fach“ in die Antwort.</p></div>
+</section>
+
+<section id="mikroskopieren" class="section">
+ <p class="kicker">Lernblock 4</p><h2>Richtig mikroskopieren</h2><p class="lead">Lerne die Reihenfolge so, dass du sie in einer Aufgabe anwenden kannst. Das Schul-Arbeitsblatt enthält genau <strong>sieben Schritte</strong>.</p>
+ <div class="card"><h3>Die sieben Schritte</h3><ol class="steps">
+  <li><strong>Beleuchtung</strong> einschalten.</li>
+  <li>Mit dem <strong>Objektivrevolver</strong> das <strong>kürzeste Objektiv</strong> (kleinste Vergrößerung) auswählen.</li>
+  <li><strong>Objektträger</strong> auf den Objekttisch legen; das Präparat liegt über der beleuchteten Öffnung.</li>
+  <li>Durch das <strong>Okular</strong> schauen und mit dem <strong>Grobtrieb</strong> scharfstellen, mit dem Feintrieb nachregulieren.</li>
+  <li>Mit der <strong>Blende</strong> die Helligkeit und den Kontrast einstellen.</li>
+  <li>Durch Verschieben des Objektträgers einen <strong>geeigneten Bildausschnitt</strong> suchen.</li>
+  <li>Erst wenn das Bild scharf ist, die <strong>nächsthöhere Vergrößerung</strong> wählen; dann <strong>nur noch mit dem Feintrieb</strong> nachregulieren.</li>
+ </ol><p class="source">Quellen: „Richtiges Mikroskopieren“, Schülerblatt S. 16; Lehrbuch S. 173.</p></div>
+ <div class="cards"><article class="card"><h3>Sicher mit dem Gerät umgehen</h3><ul class="bullet"><li>Aufrecht tragen: <strong>eine Hand am Stativ, die andere am Fuß</strong>.</li><li>Die <strong>Linsen nicht berühren</strong>; Reinigung durch die Lehrkraft.</li><li>Das <strong>Objektiv darf nicht auf das Objekt stoßen</strong>.</li></ul><p class="source">Arbeitsblatt „Sicherer Umgang mit dem Mikroskop“, S. 15; Lehrbuch S. 172.</p></article>
+ <article class="card special"><span class="pill extra">Ergänzung aus den Unterlagen</span><h3>Trocken- und Nasspräparat</h3><p>Beim <strong>Trockenpräparat</strong> legst du z. B. ein Haar direkt auf den Objektträger.</p><p>Beim <strong>Nasspräparat</strong> kommt ein Tropfen Wasser auf den Objektträger, das Objekt hinein und vorsichtig ein <strong>Deckglas</strong> darüber.</p><p class="source">Lehrbuch S. 173; Wasserpest-Arbeitsblatt, S. 1.</p></article></div>
+ <details><summary>Wissenscheck: Wann darfst du die Vergrößerung erhöhen?</summary><div class="answer"><p><strong>Erst wenn das Bild bei der kleineren Vergrößerung scharf ist.</strong> Danach nur noch mit dem Feintrieb nachregulieren.</p></div></details>
+</section>
+
+<section id="zelle" class="section">
+ <p class="kicker">Lernblock 5</p><h2>Die Pflanzenzelle</h2><p class="lead">Alle Lebewesen bestehen aus Zellen. Die Pflanzenzelle hat verschiedene Zellbestandteile, die unterschiedliche Aufgaben übernehmen.</p>
+ <div class="card"><h3>Die acht Bestandteile aus deinem Zell-Arbeitsblatt</h3><p>Die Skizze zeigt eine <strong>schematische</strong> Pflanzenzelle. Verbinde die Nummern mit der Tabelle. Die Farben und Formen helfen beim Lernen; sie sind kein Foto.</p><div class="viz"><svg class="graphic" viewBox="0 0 550 440" role="img" aria-label="Pflanzenzelle mit acht nummerierten Zellbestandteilen"><path d="M134 41 L403 41 Q449 43 453 88 L453 335 Q453 375 413 378 L135 378 Q95 371 94 334 L94 92 Q98 51 134 41 Z" fill="#c9b074" stroke="#69522d" stroke-width="10"/>
+      <path d="M135 57 L402 57 Q433 59 437 93 L437 331 Q434 358 408 361 L137 361 Q112 355 112 330 L112 93 Q115 67 135 57 Z" fill="#f5e8bf" stroke="#2c897b" stroke-width="3"/>
+      <path d="M213 119 C290 105 362 147 368 217 C362 286 291 306 204 272 C165 247 161 159 213 119Z" fill="#b2dbed" stroke="#5a9fbc" stroke-width="2"/>
+      <circle cx="378" cy="278" r="32" fill="#d87f7e" stroke="#9d4e55" stroke-width="2"/><circle cx="382" cy="281" r="12" fill="#e9b8b1"/>
+      <g fill="#7bab68" stroke="#407d45" stroke-width="2"><ellipse cx="145" cy="114" rx="14" ry="25" transform="rotate(28 145 114)"/><ellipse cx="411" cy="122" rx="14" ry="23" transform="rotate(-32 411 122)"/><ellipse cx="154" cy="316" rx="14" ry="23" transform="rotate(-25 154 316)"/><ellipse cx="410" cy="315" rx="13" ry="24" transform="rotate(25 410 315)"/></g>
+      <g fill="#deaa72" stroke="#a66b40" stroke-width="2"><ellipse cx="373" cy="170" rx="24" ry="12" transform="rotate(-24 373 170)"/><ellipse cx="177" cy="290" rx="23" ry="11" transform="rotate(18 177 290)"/></g>
+      <rect x="90" y="206" width="26" height="9" fill="#f3f6f7" stroke="#558c7f" stroke-width="2"/>
+    <g><circle cx="104" cy="73" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="104" y="78" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">1</text></g><g><circle cx="129" cy="162" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="129" y="167" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">2</text></g><g><circle cx="169" cy="221" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="169" y="226" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">3</text></g><g><circle cx="372" cy="169" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="372" y="174" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">4</text></g><g><circle cx="379" cy="280" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="379" y="285" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">5</text></g><g><circle cx="98" cy="210" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="98" y="215" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">6</text></g><g><circle cx="260" cy="191" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="260" y="196" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">7</text></g><g><circle cx="146" cy="114" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="146" y="119" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">8</text></g><text x="273" y="415" class="svglbl">Pflanzenzelle • Zahlen siehe Tabelle</text></svg></div>
+ <div class="scroll-table"><table class="table threecol"><thead><tr><th>Nr.</th><th>Bestandteil</th><th>Wichtigste Funktion</th></tr></thead><tbody>
+ <tr><td>1</td><td>Zellwand</td><td>Gibt <strong>Stabilität, Form und Schutz</strong>.</td></tr>
+ <tr><td>2</td><td>Zellmembran</td><td>Umschließt das Zellplasma und <strong>kontrolliert den Stoffaustausch</strong>.</td></tr>
+ <tr><td>3</td><td>Zellplasma</td><td>Die Zellflüssigkeit, in der Zellbestandteile liegen; <strong>Transport von Stoffen</strong> in der Zelle.</td></tr>
+ <tr><td>4</td><td>Mitochondrium</td><td>„<strong>Kraftwerk</strong>“ der Zelle; liefert Energie.</td></tr>
+ <tr><td>5</td><td>Zellkern</td><td>Trägt die <strong>Erbinformation</strong> und steuert Vorgänge in der Zelle.</td></tr>
+ <tr><td>6</td><td>Tüpfel</td><td>Kleine Stellen in der Zellwand; ermöglichen <strong>Stoffaustausch mit Nachbarzellen</strong>.</td></tr>
+ <tr><td>7</td><td>Vakuole</td><td>Regelt den <strong>Wasserhaushalt</strong> und speichert z. B. Stoffe.</td></tr>
+ <tr><td>8</td><td>Chloroplast</td><td>Enthält <strong>Chlorophyll</strong> (grüner Blattfarbstoff); hier läuft <strong>Fotosynthese</strong> ab.</td></tr>
+ </tbody></table></div><p class="source">Quellen: „Die Zelle – Sachtext/Sicherung“, Schülerblätter S. 17–19; Lehrbuch S. 176.</p></div>
+ <div class="grid3"><div class="card"><h3>Schutz &amp; Grenze</h3><p><strong>Zellwand:</strong> Form und Stabilität.<br><strong>Zellmembran:</strong> Stoffaustausch kontrollieren.</p></div><div class="card"><h3>Steuern &amp; Energie</h3><p><strong>Zellkern:</strong> steuert.<br><strong>Mitochondrien:</strong> liefern Energie.</p></div><div class="card"><h3>Speichern &amp; Herstellen</h3><p><strong>Vakuole:</strong> Wasserhaushalt und Speicher.<br><strong>Chloroplasten:</strong> Fotosynthese.</p></div></div>
+ <div class="callout"><p><strong>Merksatz:</strong> Die <strong>Zellwand</strong> hält die Form, die <strong>Zellmembran</strong> regelt den Austausch, der <strong>Zellkern</strong> steuert, <strong>Mitochondrien</strong> liefern Energie und <strong>Chloroplasten</strong> ermöglichen Fotosynthese.</p></div>
+ <details><summary>Zusatzwort aus dem Vergleichs-Arbeitsblatt: Ribosomen</summary><div class="answer"><p>Im Vergleichs-Arbeitsblatt sind auch <strong>Ribosomen</strong> beschriftet. Die handschriftliche Funktionsnotiz nennt die Herstellung von Eiweißstoffen. Dieses Wort gehört <strong>nicht</strong> zur Acht-Begriffe-Liste des Arbeitsblatts „Die Zelle“; es ist hier deshalb eine <strong>zusätzliche Vertiefung</strong>.</p></div></details>
+</section>
+
+<section id="vergleich" class="section">
+ <p class="kicker">Lernblock 6</p><h2>Pflanzenzelle und Tierzelle vergleichen</h2>
+ <div class="card"><h3>Was ist gleich, was ist anders?</h3><div class="viz"><svg class="graphic" viewBox="0 0 900 440" role="img" aria-label="Schematischer Vergleich von Pflanzenzelle links und Tierzelle rechts"><path d="M134 41 L403 41 Q449 43 453 88 L453 335 Q453 375 413 378 L135 378 Q95 371 94 334 L94 92 Q98 51 134 41 Z" fill="#c9b074" stroke="#69522d" stroke-width="10"/>
+      <path d="M135 57 L402 57 Q433 59 437 93 L437 331 Q434 358 408 361 L137 361 Q112 355 112 330 L112 93 Q115 67 135 57 Z" fill="#f5e8bf" stroke="#2c897b" stroke-width="3"/>
+      <path d="M213 119 C290 105 362 147 368 217 C362 286 291 306 204 272 C165 247 161 159 213 119Z" fill="#b2dbed" stroke="#5a9fbc" stroke-width="2"/>
+      <circle cx="378" cy="278" r="32" fill="#d87f7e" stroke="#9d4e55" stroke-width="2"/><circle cx="382" cy="281" r="12" fill="#e9b8b1"/>
+      <g fill="#7bab68" stroke="#407d45" stroke-width="2"><ellipse cx="145" cy="114" rx="14" ry="25" transform="rotate(28 145 114)"/><ellipse cx="411" cy="122" rx="14" ry="23" transform="rotate(-32 411 122)"/><ellipse cx="154" cy="316" rx="14" ry="23" transform="rotate(-25 154 316)"/><ellipse cx="410" cy="315" rx="13" ry="24" transform="rotate(25 410 315)"/></g>
+      <g fill="#deaa72" stroke="#a66b40" stroke-width="2"><ellipse cx="373" cy="170" rx="24" ry="12" transform="rotate(-24 373 170)"/><ellipse cx="177" cy="290" rx="23" ry="11" transform="rotate(18 177 290)"/></g>
+      <rect x="90" y="206" width="26" height="9" fill="#f3f6f7" stroke="#558c7f" stroke-width="2"/>
+    <g transform="translate(540 101)"><path d="M113 5 C164 -13 239 21 251 94 C265 185 181 258 100 231 C27 229 -11 159 8 87 C23 38 60 13 113 5 Z" fill="#f3d6c3" stroke="#ba866c" stroke-width="5"/>
+            <circle cx="142" cy="119" r="32" fill="#d87f7e" stroke="#9d4e55" stroke-width="2"/><circle cx="148" cy="121" r="11" fill="#f5c1b3"/>
+            <ellipse cx="73" cy="87" rx="26" ry="13" transform="rotate(-25 73 87)" fill="#deaa72" stroke="#a66b40" stroke-width="2"/>
+            <ellipse cx="183" cy="174" rx="25" ry="13" transform="rotate(20 183 174)" fill="#deaa72" stroke="#a66b40" stroke-width="2"/>
+            <g fill="#bb9e89"><circle cx="63" cy="146" r="3"/><circle cx="85" cy="156" r="3"/><circle cx="95" cy="63" r="3"/><circle cx="199" cy="95" r="3"/><circle cx="211" cy="122" r="3"/><circle cx="101" cy="196" r="3"/><circle cx="122" cy="70" r="3"/><circle cx="174" cy="79" r="3"/><circle cx="56" cy="113" r="3"/><circle cx="160" cy="198" r="3"/></g>
+          </g><text x="274" y="413" class="svglbl">Pflanzenzelle</text><text x="671" y="413" class="svglbl">Tierzelle</text></svg></div><p class="figurecaption">Links: Pflanzenzelle mit Zellwand und großer Vakuole. Rechts: eine schematische Tierzelle.</p>
+ <div class="cards"><div><h3>Beide haben</h3><ul class="bullet"><li>Zellmembran</li><li>Zellplasma</li><li>Zellkern</li><li>Mitochondrien</li></ul></div><div><h3>Typisch für Pflanzenzellen</h3><ul class="bullet"><li>zusätzliche <strong>Zellwand</strong></li><li><strong>Chloroplasten</strong> in grünen Pflanzenteilen</li><li>große <strong>Vakuole</strong></li><li><strong>Tüpfel</strong> in der Zellwand</li></ul></div></div>
+ <p class="note"><strong>Formulierung aus dem Schulstoff:</strong> Das Vergleichs-Arbeitsblatt fragt, warum Tierzellen „keine Vakuolen und keine Chloroplasten“ haben. Für deinen Schulvergleich ist die <strong>große Vakuole der Pflanzenzelle</strong> entscheidend. Die Arbeitsblätter stellen diese Unterschiede vereinfacht dar.</p><p class="source">Quellen: „Vergleich von Tier- und Pflanzenzelle“, S. 23–24; Lehrbuch S. 176; „Die Zelle“.</p></div>
+ <details><summary>Kurze Frage: Warum haben grüne Pflanzenzellen Chloroplasten, Tierzellen aber nicht?</summary><div class="answer"><p>Chloroplasten nutzen mithilfe des grünen Blattfarbstoffs <strong>Chlorophyll</strong> Licht für die <strong>Fotosynthese</strong>. Tierzellen betreiben keine Fotosynthese.</p></div></details>
+</section>
+
+<section id="ergaenzungen" class="section">
+ <p class="kicker">Optional • Aus den übrigen Quellen</p><h2>Präparieren, Zeichnen &amp; Pflanzenzellmodell</h2>
+ <p class="lead">Diese Themen kommen in den Materialien vor, sind aber im Transparenzpapier <strong>nicht als eigene Lernziele</strong> aufgelistet. Sie helfen vor allem beim Anwenden und Wiederholen.</p>
+ <div class="cards">
+  <div class="card special"><span class="pill extra">Wasserpest</span><h3>Ein Pflanzenblatt mikroskopieren</h3><p>Aus dem Wasserpest-Arbeitsblatt: <strong>Wassertropfen</strong> auf den Objektträger, ein Wasserpestblättchen hinein, <strong>Deckglas</strong> vorsichtig auflegen, beobachten und eine beschriftete Zeichnung von 3–4 Zellen anfertigen.</p><p>Die Zusatzfrage nach einer <strong>Bewegung der Chloroplasten</strong> ist auf dem Blatt als Forschungsfrage formuliert, nicht als geforderter Merksatz im Transparenzpapier.</p><p class="source">Arbeitsblatt „Bewegung in der Pflanzenzelle?“, S. 1–2.</p></div>
+  <div class="card special"><span class="pill extra">Zeichenregeln</span><h3>Eine mikroskopische Zeichnung</h3><p>Mit <strong>Bleistift</strong>, groß und mit klaren Linien zeichnen. Beschrifte die sichtbaren Bestandteile mit Fachbegriffen; ergänze den <strong>Namen des Objekts</strong> und die <strong>Vergrößerung</strong>.</p><p class="source">Lehrbuch S. 175; Wasserpest-Arbeitsblatt S. 2.</p></div>
+  <div class="card special wide"><span class="pill extra">Modellbau</span><h3>Die Pflanzenzelle als 3D-Modell</h3><p>Die Schülerblätter S. 26–28 lassen ein Modell planen, bauen und mit einer Legende versehen. Bewertet werden unter anderem passende Formen, Größenverhältnisse und korrekte Beschriftung. <strong>Als Lernhilfe:</strong> Benenne am Modell alle Zellbestandteile und erkläre ihre Funktionen. Dass du in der Klassenarbeit ein Modell bauen musst, steht <strong>nicht</strong> auf dem Transparenzpapier.</p></div>
+ </div>
+</section>
+
+<section id="begriffe" class="section">
+ <p class="kicker">Nachschlagehilfe</p><h2>Fachbegriffe auf einen Blick</h2>
+ <div class="card"><div class="scroll-table"><table class="table small-table"><thead><tr><th>Begriff</th><th>Kurzdefinition</th></tr></thead><tbody>
+ <tr><td>Sammellinse / Konvexlinse</td><td>Mitte dicker; führt parallel einfallende Strahlen zusammen.</td></tr>
+ <tr><td>Zerstreuungslinse / Konkavlinse</td><td>Mitte dünner; lässt parallel einfallende Strahlen auseinanderlaufen.</td></tr>
+ <tr><td>Brennpunkt</td><td>Der Punkt, an dem parallele Strahlen nach der Sammellinse zusammentreffen.</td></tr>
+ <tr><td>Okular</td><td>Linse, durch die man in das Mikroskop blickt.</td></tr>
+ <tr><td>Objektiv</td><td>Vergrößerungslinse nahe am untersuchten Objekt.</td></tr>
+ <tr><td>Gesamtvergrößerung</td><td>Okularvergrößerung multipliziert mit Objektivvergrößerung.</td></tr>
+ <tr><td>Präparat</td><td>Für die Untersuchung vorbereitetes Objekt.</td></tr>
+ <tr><td>Objektträger</td><td>Glasplättchen, auf dem das Präparat liegt.</td></tr>
+ <tr><td>Deckglas</td><td>Dünnes Glas zum Abdecken eines Nasspräparats.</td></tr>
+ <tr><td>Zelle</td><td>Grundbaustein eines Lebewesens.</td></tr>
+ <tr><td>Zellorganell</td><td>Bestandteil im Zellinneren mit einer bestimmten Aufgabe.</td></tr>
+ <tr><td>Chlorophyll</td><td>Grüner Blattfarbstoff in Chloroplasten.</td></tr>
+ <tr><td>Fotosynthese</td><td>Vorgang, bei dem grüne Pflanzen mithilfe von Licht energiereiche Stoffe und Sauerstoff herstellen.</td></tr>
+ <tr><td>Vakuole</td><td>Speicherbereich der Pflanzenzelle; hilft beim Wasserhaushalt.</td></tr>
+ <tr><td>Tüpfel</td><td>Stellen in der Zellwand, die Stoffaustausch mit Nachbarzellen ermöglichen.</td></tr>
+ </tbody></table></div></div>
+</section>
+
+<section id="probearbeit" class="section">
+ <p class="kicker">Jetzt ohne Spicken</p><h2>Probearbeit · Klasse 6</h2>
+ <p class="lead">Diese Probearbeit ist <strong>selbst erstellt</strong>, nicht von der Lehrkraft. Sie orientiert sich an allen neun Lernzielen. Empfehlung: ohne Unterlagen bearbeiten, möglichst in <strong>45–60 Minuten</strong>. Insgesamt <strong>50 Punkte</strong>.</p>
+ <div class="callout amber"><p><strong>So geht’s:</strong> Schreibe die Antworten auf Papier, zeichne mit dem Lineal. Öffne die Musterlösungen erst nach der Bearbeitung. Bei Zeichnungen zählen die korrekte Beschriftung und die Strahlenrichtung.</p></div>
+ <article class="question"><span class="points">8 Punkte</span><h3>Aufgabe 1 · Optische Linsen</h3>
+  <p><strong>a)</strong> Wie heißen die beiden Linsentypen? Beschreibe jeweils ihre Form. <em>(4 P.)</em></p><div class="lines short"></div>
+  <p><strong>b)</strong> Zeichne für eine Sammel- und eine Zerstreuungslinse jeweils drei parallele Lichtstrahlen, die von links kommen, und ihren Verlauf hinter der Linse. Kennzeichne bei der Sammellinse den Brennpunkt. <em>(4 P.)</em></p>
+  <div class="cards"><div class="viz"><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Sammellinse: drei parallele Lichtstrahlen links; rechts treffen sie sich im Brennpunkt">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /></g>
+    <path d="M252 43 C219 65 219 185 252 207 C285 185 285 65 252 43 Z" fill="#c7f3e8" stroke="#276b7b" stroke-width="2.5"/>
+    <text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div><div class="viz"><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Zerstreuungslinse: drei parallele Lichtstrahlen links; Lichtstrahlen zum Ergänzen">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /></g>
+    <path d="M225 43 Q260 125 225 207 L279 207 Q244 125 279 43 Z" fill="#dbeafe" stroke="#276b7b" stroke-width="2.5"/>
+    <text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div></div>
+  <details><summary>Musterlösung Aufgabe 1</summary><div class="answer"><p><strong>a)</strong> Sammellinse/Konvexlinse: Mitte dicker als Rand. Zerstreuungslinse/Konkavlinse: Mitte dünner als Rand.</p><p><strong>b)</strong> Sammellinse: parallele Lichtstrahlen treffen sich im Brennpunkt F. Zerstreuungslinse: sie laufen hinter der Linse auseinander.</p><div class="cards"><div><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Sammellinse: drei parallele Lichtstrahlen links; rechts treffen sie sich im Brennpunkt">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /><path d="M252 75 L398 125 L470 150"/><path d="M252 125 H470"/><path d="M252 175 L398 125 L470 100"/></g>
+    <path d="M252 43 C219 65 219 185 252 207 C285 185 285 65 252 43 Z" fill="#c7f3e8" stroke="#276b7b" stroke-width="2.5"/>
+    <circle cx="398" cy="125" r="4.8" fill="#f97316"/><text x="342" y="83" class="svgtiny">F = Brennpunkt</text><text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div><div><svg class="graphic" viewBox="0 0 520 260" role="img" aria-label="Zerstreuungslinse: drei parallele Lichtstrahlen links; rechts laufen sie auseinander">
+    <line x1="31" y1="125" x2="488" y2="125" stroke="#b7c4d2" stroke-width="1.2" stroke-dasharray="6 6"/>
+    <g stroke="#dc7b22" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M52 75 H250" /><path d="M52 125 H250" /><path d="M52 175 H250" /><path d="M252 75 L455 24"/><path d="M252 125 H470"/><path d="M252 175 L455 226"/></g>
+    <path d="M225 43 Q260 125 225 207 L279 207 Q244 125 279 43 Z" fill="#dbeafe" stroke="#276b7b" stroke-width="2.5"/>
+    <text x="55" y="242" class="svgtiny">Parallel einfallendes Licht →</text>
+    </svg></div></div><p class="note">Punktehinweis: je 2 Punkte pro korrektem Linsennamen mit Form; je 2 Punkte für den richtigen Strahlenverlauf.</p></div></details>
+ </article>
+ <article class="question"><span class="points">12 Punkte</span><h3>Aufgabe 2 · Das Mikroskop</h3><p><strong>a)</strong> Benenne die <strong>Bauteile 1 bis 8</strong> in der Zeichnung. <em>(8 P.)</em></p><div class="viz"><svg class="graphic" viewBox="0 0 760 540" role="img" aria-label="Schematische Zeichnung eines Lichtmikroskops mit den Nummern 1 bis 11">
+      <path d="M210 476 L584 476 Q608 490 621 520 H172 Q175 492 210 476 Z" fill="#a7b9c7" stroke="#485e73" stroke-width="4"/>
+      <path d="M314 469 C258 385 266 260 370 201 C416 177 464 183 497 193" fill="none" stroke="#667e93" stroke-width="40" stroke-linecap="round"/>
+      <path d="M314 469 C258 385 266 260 370 201 C416 177 464 183 497 193" fill="none" stroke="#b3c1cc" stroke-width="24" stroke-linecap="round"/>
+      <g transform="rotate(-32 506 103)"><rect x="466" y="57" width="80" height="140" rx="9" fill="#c6d2dc" stroke="#40586b" stroke-width="4"/><rect x="456" y="42" width="100" height="28" rx="7" fill="#546b7d" stroke="#31485b" stroke-width="3"/><rect x="463" y="34" width="85" height="12" rx="4" fill="#24384b"/></g>
+      <ellipse cx="559" cy="203" rx="62" ry="23" transform="rotate(-13 559 203)" fill="#657d8f" stroke="#40596e" stroke-width="4"/>
+      <g fill="#e1e9ee" stroke="#40596e" stroke-width="3"><path d="M516 207 L550 207 L553 291 L527 291 Z"/><path d="M572 207 L596 210 L583 263 L566 260 Z"/></g>
+      <rect x="356" y="318" width="286" height="30" rx="6" fill="#566e7d" stroke="#344b5c" stroke-width="3"/><rect x="469" y="306" width="127" height="10" rx="3" fill="#d8f8fa" stroke="#356b84" stroke-width="2"/><ellipse cx="525" cy="333" rx="29" ry="5" fill="#2b4251"/>
+      <rect x="495" y="348" width="72" height="17" rx="6" fill="#96abb8" stroke="#425e70" stroke-width="3"/><circle cx="531" cy="356" r="10" fill="#364b5b"/>
+      <rect x="495" y="410" width="78" height="63" rx="8" fill="#6f8897" stroke="#40586b" stroke-width="3"/><ellipse cx="534" cy="411" rx="35" ry="10" fill="#f6d48a" stroke="#40586b" stroke-width="3"/>
+      <circle cx="313" cy="315" r="41" fill="#6c8798" stroke="#354f61" stroke-width="5"/><circle cx="313" cy="315" r="24" fill="#cdd8df" stroke="#3d5768" stroke-width="4"/><circle cx="318" cy="325" r="13" fill="#4c6a7a" stroke="#2f4f5f" stroke-width="2"/>
+      <circle cx="551" cy="489" r="10" fill="#f1c979" stroke="#485c6c" stroke-width="2"/>
+      <g><circle cx="454" cy="38" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="454" y="43" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">1</text></g><g><circle cx="530" cy="113" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="530" y="118" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">2</text></g><g><circle cx="555" cy="274" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="555" y="279" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">3</text></g><g><circle cx="624" cy="323" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="624" y="328" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">4</text></g><g><circle cx="512" cy="360" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="512" y="365" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">5</text></g><g><circle cx="330" cy="230" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="330" y="235" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">6</text></g><g><circle cx="307" cy="328" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="307" y="333" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">7</text></g><g><circle cx="524" cy="437" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="524" y="442" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">8</text></g><g><circle cx="625" cy="189" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="625" y="194" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">9</text></g><g><circle cx="559" cy="307" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="559" y="312" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">10</text></g><g><circle cx="433" cy="489" r="14" fill="#fff" stroke="#217f83" stroke-width="2"/><text x="433" y="494" font-size="15" font-weight="800" text-anchor="middle" fill="#07585a">11</text></g>
+      <text x="29" y="526" class="svgtiny">Schematisch • Zeichnung nicht maßstabsgetreu</text>
+    </svg></div>
+ <p><strong>b)</strong> Beschreibe die Funktion von <strong>Blende</strong> und <strong>Objektivrevolver</strong> in je einem Satz. <em>(4 P.)</em></p><div class="lines short"></div>
+ <details><summary>Musterlösung Aufgabe 2</summary><div class="answer"><p><strong>a)</strong> 1 Okular, 2 Tubus, 3 Objektiv, 4 Objekttisch, 5 Blende, 6 Stativ, 7 Triebrad (Grob-/Feintrieb), 8 Lampe/Lichtquelle.</p><p><strong>b)</strong> Blende: regelt Helligkeit und Bildkontrast. Objektivrevolver: ist drehbar und dient zum Wechsel zwischen Objektiven mit verschiedenen Vergrößerungen.</p><p class="note">Bewertung: 1 Punkt je richtigem Namen; 2 Punkte je sinnvoll erklärter Funktion.</p></div></details></article>
+ <article class="question"><span class="points">4 Punkte</span><h3>Aufgabe 3 · Rechnen mit Vergrößerungen</h3>
+ <p>Das Okular vergrößert 10-fach. Berechne jeweils die Gesamtvergrößerung und schreibe den <strong>Rechenweg</strong> auf.</p><p><strong>a)</strong> Objektiv: 10-fach. <em>(2 P.)</em></p><p><strong>b)</strong> Objektiv: 40-fach. <em>(2 P.)</em></p><div class="lines short"></div>
+ <details><summary>Musterlösung Aufgabe 3</summary><div class="answer"><p>a) 10 × 10 = <strong>100-fach</strong>.<br>b) 10 × 40 = <strong>400-fach</strong>.</p><p>Jeweils ein Punkt für die Multiplikation und ein Punkt für die richtige Antwort.</p></div></details></article>
+ <article class="question"><span class="points">6 Punkte</span><h3>Aufgabe 4 · Richtig mikroskopieren</h3>
+ <p>Die folgenden Teilschritte sind durcheinandergeraten. <strong>Ordne sie in die richtige Reihenfolge</strong> von 1 bis 6.</p>
+ <div class="chiprow"><span class="chip">A · Grobtrieb zum Scharfstellen benutzen</span><span class="chip">B · Höhere Vergrößerung wählen, danach nur Feintrieb</span><span class="chip">C · Beleuchtung einschalten</span><span class="chip">D · Mit der Blende Helligkeit regeln</span><span class="chip">E · Kleinste Vergrößerung wählen</span><span class="chip">F · Objektträger auf den Objekttisch legen</span></div><div class="lines short"></div>
+ <details><summary>Musterlösung Aufgabe 4</summary><div class="answer"><p><strong>C → E → F → A → D → B.</strong> Ein Punkt für jeden richtig zugeordneten Teilschritt.</p><p class="note">Das Verschieben des Objektträgers zur Wahl des Bildausschnitts gehört im vollständigen Verfahren zwischen D und B; es ist hier kein eigener Antwortbaustein.</p></div></details></article>
+ <article class="question"><span class="points">8 Punkte</span><h3>Aufgabe 5 · Pflanzenzelle beschriften</h3><p>Schreibe die richtigen Namen der <strong>acht nummerierten Zellbestandteile</strong> auf. <em>(8 P.)</em></p><div class="viz"><svg class="graphic" viewBox="0 0 550 440" role="img" aria-label="Pflanzenzelle mit acht nummerierten Zellbestandteilen"><path d="M134 41 L403 41 Q449 43 453 88 L453 335 Q453 375 413 378 L135 378 Q95 371 94 334 L94 92 Q98 51 134 41 Z" fill="#c9b074" stroke="#69522d" stroke-width="10"/>
+      <path d="M135 57 L402 57 Q433 59 437 93 L437 331 Q434 358 408 361 L137 361 Q112 355 112 330 L112 93 Q115 67 135 57 Z" fill="#f5e8bf" stroke="#2c897b" stroke-width="3"/>
+      <path d="M213 119 C290 105 362 147 368 217 C362 286 291 306 204 272 C165 247 161 159 213 119Z" fill="#b2dbed" stroke="#5a9fbc" stroke-width="2"/>
+      <circle cx="378" cy="278" r="32" fill="#d87f7e" stroke="#9d4e55" stroke-width="2"/><circle cx="382" cy="281" r="12" fill="#e9b8b1"/>
+      <g fill="#7bab68" stroke="#407d45" stroke-width="2"><ellipse cx="145" cy="114" rx="14" ry="25" transform="rotate(28 145 114)"/><ellipse cx="411" cy="122" rx="14" ry="23" transform="rotate(-32 411 122)"/><ellipse cx="154" cy="316" rx="14" ry="23" transform="rotate(-25 154 316)"/><ellipse cx="410" cy="315" rx="13" ry="24" transform="rotate(25 410 315)"/></g>
+      <g fill="#deaa72" stroke="#a66b40" stroke-width="2"><ellipse cx="373" cy="170" rx="24" ry="12" transform="rotate(-24 373 170)"/><ellipse cx="177" cy="290" rx="23" ry="11" transform="rotate(18 177 290)"/></g>
+      <rect x="90" y="206" width="26" height="9" fill="#f3f6f7" stroke="#558c7f" stroke-width="2"/>
+    <g><circle cx="104" cy="73" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="104" y="78" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">1</text></g><g><circle cx="129" cy="162" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="129" y="167" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">2</text></g><g><circle cx="169" cy="221" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="169" y="226" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">3</text></g><g><circle cx="372" cy="169" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="372" y="174" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">4</text></g><g><circle cx="379" cy="280" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="379" y="285" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">5</text></g><g><circle cx="98" cy="210" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="98" y="215" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">6</text></g><g><circle cx="260" cy="191" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="260" y="196" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">7</text></g><g><circle cx="146" cy="114" r="15" fill="#fff" stroke="#116c72" stroke-width="2.5"/><text x="146" y="119" font-size="15" font-weight="800" fill="#095c60" text-anchor="middle">8</text></g><text x="273" y="415" class="svglbl">Pflanzenzelle • Zahlen siehe Tabelle</text></svg></div><p>1 ________ · 2 ________ · 3 ________ · 4 ________</p><p>5 ________ · 6 ________ · 7 ________ · 8 ________</p>
+ <details><summary>Musterlösung Aufgabe 5</summary><div class="answer"><p>1 Zellwand · 2 Zellmembran · 3 Zellplasma · 4 Mitochondrium · 5 Zellkern · 6 Tüpfel · 7 Vakuole · 8 Chloroplast.</p><p>Je 1 Punkt für jede richtige Beschriftung.</p></div></details></article>
+ <article class="question"><span class="points">8 Punkte</span><h3>Aufgabe 6 · Aufgaben der Zellbestandteile</h3>
+ <p>Beschreibe die Aufgaben dieser vier Bestandteile in jeweils einem vollständigen Satz. <em>(je 2 P.)</em></p><p><strong>a)</strong> Zellwand &nbsp; <strong>b)</strong> Zellmembran &nbsp; <strong>c)</strong> Zellkern &nbsp; <strong>d)</strong> Chloroplast</p><div class="lines"></div>
+ <details><summary>Musterlösung Aufgabe 6</summary><div class="answer"><p><strong>a)</strong> Zellwand: gibt der Zelle Stabilität, Form und Schutz.</p><p><strong>b)</strong> Zellmembran: umschließt das Zellplasma und kontrolliert den Stoffaustausch.</p><p><strong>c)</strong> Zellkern: trägt die Erbinformation und steuert Zellvorgänge.</p><p><strong>d)</strong> Chloroplast: enthält Chlorophyll und ermöglicht die Fotosynthese.</p><p class="note">Je 2 Punkte für eine inhaltlich richtige Beschreibung, auch mit eigenen Worten.</p></div></details></article>
+ <article class="question"><span class="points">4 Punkte</span><h3>Aufgabe 7 · Tier- und Pflanzenzelle</h3><p><strong>a)</strong> Nenne <strong>zwei Zellbestandteile</strong>, die im Vergleichs-Arbeitsblatt der Pflanzenzelle, nicht aber der Tierzelle zugeordnet werden. <em>(2 P.)</em></p><p><strong>b)</strong> Nenne <strong>zwei Zellbestandteile</strong>, die in beiden Zellen vorkommen. <em>(2 P.)</em></p><div class="lines short"></div>
+ <details><summary>Musterlösung Aufgabe 7</summary><div class="answer"><p><strong>a)</strong> z. B. Zellwand und Chloroplasten (auch große Vakuole).</p><p><strong>b)</strong> z. B. Zellmembran und Zellkern (auch Zellplasma oder Mitochondrien).</p><p>Je ein Punkt für einen passenden Bestandteil.</p></div></details></article>
+ <div class="card"><h3>Auswertung</h3><p><strong>Erreichte Punkte: ____ / 50</strong></p><p class="note">Die 50 Punkte und die Aufgabenverteilung sind nur für diese <strong>Probe</strong> festgelegt. Der tatsächliche Notenschlüssel der Lehrkraft ist nicht bekannt.</p><div class="chiprow"><span class="chip">1: 8 P.</span><span class="chip">2: 12 P.</span><span class="chip">3: 4 P.</span><span class="chip">4: 6 P.</span><span class="chip">5: 8 P.</span><span class="chip">6: 8 P.</span><span class="chip">7: 4 P.</span></div></div>
+</section>
+
+<section id="abend" class="section">
+ <p class="kicker">Kurz vor der Klassenarbeit</p><h2>Der 5-Minuten-Abendcheck</h2><div class="card"><ol class="bullet">
+ <li><strong>Linsen:</strong> Dick in der Mitte sammelt; dünn in der Mitte zerstreut. Zeichne beide Strahlenbilder ohne Vorlage.</li>
+ <li><strong>Mikroskop:</strong> Nenne Okular, Objektiv, Tubus, Stativ, Tisch, Trieb, Blende und Lampe samt Funktion.</li>
+ <li><strong>Rechnen:</strong> Okular × Objektiv. Beispiel: 10 × 40 = 400-fach.</li>
+ <li><strong>Ablauf:</strong> Licht → kleinstes Objektiv → Präparat → scharfstellen → Blende → Ausschnitt → größere Vergrößerung, nur Feintrieb.</li>
+ <li><strong>Zelle:</strong> Zeichne eine Pflanzenzelle und benenne die 8 Teile. Erkläre besonders Zellwand, Zellmembran, Zellkern, Vakuole, Chloroplasten.</li>
+ <li><strong>Vergleich:</strong> Zellwand und Chloroplasten als Unterschiede; Zellkern und Zellmembran als Gemeinsamkeiten.</li>
+ </ol><p class="callout"><strong>Für die Klassenarbeit einpacken:</strong> Füller, Bleistift, Geodreieck und Radiergummi. Alle Linien mit dem Lineal ziehen.</p></div>
+</section>
+<section id="quellen" class="section"><div class="card"><h3>Woraus wurde diese Lernseite erstellt?</h3><p class="note">Ausschließlich aus den in diesem Chat vorhandenen Materialien:</p><ul class="bullet note"><li><strong>Transparenzpapier 6c</strong> (Prüfungsziele und Termin).</li><li><strong>Lehrbuch „Erlebnis Naturwissenschaften 5/6“, S. 170–177</strong> (hochgeladene Fotos).</li><li><strong>Schul-Arbeitsblätter, S. 12–19 und 23–24</strong> mit handschriftlichen Ergänzungen (hochgeladene Fotos); dazu die Dateien „Die Zelle – Sachtext/Sicherung“ und „Vergleich von Tier- und Pflanzenzelle“.</li><li><strong>Wasserpest-Arbeitsblatt</strong> (2 Seiten), Ergänzungen zur praktischen Arbeit.</li><li><strong>Schul-Arbeitsblätter S. 26–28</strong> zum Pflanzenzellmodell und dessen Bewertung.</li></ul><p class="tiny">Die SVG-Schaubilder sind eigenständig erstellte, vereinfachte Lernskizzen, keine kopierten Lehrbuchbilder. Es sind keine Bibliotheken, Netzwerkzugriffe oder externen Dateien notwendig.</p></div></section>
+</main>
+<footer class="footer">NaWi 6c · Mikroskop &amp; Zelle · Lernstand nach dem Transparenzpapier 2026/27 · Offline nutzbare Ein-Datei-Webseite</footer>
+<script>
+(function(){
+ 'use strict';
+ const boxes=[...document.querySelectorAll('input[data-goal]')];
+ const bar=document.getElementById('bar');
+ const text=document.getElementById('progtext');
+ const role=document.getElementById('barrole');
+ const storeKey='nawi6c-202611-goals-v1';
+ function read(){try{return JSON.parse(localStorage.getItem(storeKey)||'{}')}catch(e){return {}}}
+ function save(value){try{localStorage.setItem(storeKey,JSON.stringify(value))}catch(e){}}
+ function refresh(){const count=boxes.filter(x=>x.checked).length;bar.style.width=(100*count/boxes.length)+'%';text.textContent=count+' von '+boxes.length+' Lernzielen abgehakt';role.setAttribute('aria-valuenow',String(count));}
+ const saved=read();boxes.forEach(x=>{x.checked=!!saved[x.dataset.goal];x.addEventListener('change',()=>{const state={};boxes.forEach(b=>state[b.dataset.goal]=b.checked);save(state);refresh()})});
+ document.getElementById('clear').addEventListener('click',()=>{boxes.forEach(x=>x.checked=false);save({});refresh()});refresh();
+})();
+</script>
+</body></html>
